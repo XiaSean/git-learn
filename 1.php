@@ -1,7 +1,6 @@
 <?php 
+# this is some test
 
-echo 'hello,world';
 
-echo 'I love you ';
 
  ?>
