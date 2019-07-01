@@ -1,13 +1,13 @@
 <?php 
 
-function rm_dir($path) {
-	if(!is_dir($path)){
+function rm_dir($path){
+	if(!is_dir($path)) {
 		return NULL;
 	}
 
 	$dh = opendir($path);
-	while($row=readdir($dh)!==false) {
-		if($row=='.'||$row=='..') {
+	while(($row= readdir($dh))!==false) {
+		if($row == '.'||$row=='..') {
 			continue;
 		}
 		if(!is_dir($path.'/'.$row)) {
@@ -21,6 +21,5 @@ function rm_dir($path) {
 	rmdir($path);
 	echo '删除了',$path,'文件夹','<br />';
 	return true;
-	
 }
  ?>
