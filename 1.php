@@ -22,4 +22,14 @@ function rm_dir($path){
 	echo '删除了',$path,'文件夹','<br />';
 	return true;
 }
+=
+/**
+ * undocumented function
+ *
+ * @return void
+ * @author 
+ **/
+function ()
+{
+}
  ?>
